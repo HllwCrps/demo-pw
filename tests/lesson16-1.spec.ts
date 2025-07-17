@@ -2,7 +2,7 @@ import {expect, Locator, test} from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
 
-    await page.goto(process.env.BASE_URL);
+    await page.goto('https://fe-delivery.tallinn-learning.ee/signin');
 })
 
 test('sign in disabled button' , async ({ page }) => {
